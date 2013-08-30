@@ -158,7 +158,7 @@ for i = 1 : num_files
         type = strjoin(suffix,'.');
         if in_cell(type, image_types)
             ids = regexpi(names{1},'\_','split');
-            if numel(ids) >= 2
+            if numel(ids) >= 3
                 id = strjoin(ids(1:2),'_');
             else
                 id = ids{1};
